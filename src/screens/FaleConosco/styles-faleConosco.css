@@ -19,7 +19,7 @@
 }
 
 .container-fale-conosco {
-  min-height: 87.6%;
+ height: 100%;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -27,7 +27,6 @@
   justify-content: center;
   background-image: linear-gradient(to bottom, #007eab, #210b2c);
 
-  position: static;
 }
 
 .title-fale-conosco {
@@ -39,7 +38,17 @@
   word-wrap: break-word;
 }
 
-.container-fale-conosco h1 {
+.container-filho-fc{
+  height: 40%;
+  width: 100%;
+  display: flex;
+  
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.container-filho-fc h1 {
   margin: 0;
   padding: 0;
   color: white;
@@ -58,29 +67,46 @@
   display: none;
 }
 
-.form-group {
+.area-msg{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  resize: none;
+}
+
+.area-msg textarea{
+  font-size: 20px;
+  width: 100%;
+  height: 100%;
+}
+
+.name-fc {
   display: flex;
   flex-direction: column;
   margin: 10px 0;
   width: 100%;
+  
 }
 
-.form-group input,
+.name-fc input,
 textarea {
   border: none;
+  font-size: 1.5rem;
+
   border-radius: 5px;
   padding: 1%;
   resize: none;
 }
 
-.form-group,
-.form-group-double,
+.name-fc,
+.mail-ra-spa,
 input::placeholder,
 textarea::placeholder {
   color: rgb(100, 83, 122);
   font-family: "Roboto", sans-serif;
 }
-.form-group textarea {
+.name-fc textarea {
   width: 100%;
 }
 .submit-group {
@@ -113,6 +139,8 @@ textarea::placeholder {
 
 .icon-area:hover {
   transform: translateY(10px);
+  transition: 300ms ease-in-out;
+
   box-shadow: 0 8px 12px black;
 }
 
@@ -123,7 +151,7 @@ textarea::placeholder {
   align-items: center;
 }
 
-.form-group-double {
+.mail-ra-spa {
   display: flex;
 
   margin: 10px 0;
@@ -173,12 +201,16 @@ textarea::placeholder {
     background-color: var(--color-white);
   }
 
-  .form-group > input::placeholder,
-  .form-group-double > input::placeholder {
+  .name-fc > input::placeholder,
+  .mail-ra-spa > input::placeholder {
     color: transparent;
   }
-  .form-group-double > {
+  .mail-ra-spa > {
     background-color: var(--color-white);
+  }
+
+  .mail-ra-spa input{
+  font-size: 1.5rem;
   }
   .container-fale-conosco form {
     width: 90%;
@@ -186,14 +218,16 @@ textarea::placeholder {
   .container-fale-conosco h1 {
     color: #fff;
   }
-  .form-group-double {
+  .mail-ra-spa {
     justify-content: space-around;
     flex-direction: column;
     margin: 3px 0;
+    
   }
   .input-double {
     width: 100%;
     margin: 3px 0;
+    
   }
 
   .input-double:nth-child(4) {
@@ -217,14 +251,4 @@ textarea::placeholder {
   justify-content: space-around;
   border-radius: 3rem;
   font-family: var(--josefin);
-}
-.none {
-  display: none;
-}
-.barra-navegacao > div {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
 }

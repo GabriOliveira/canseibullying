@@ -1,4 +1,4 @@
-import "./styles.css";
+import "./styles-faleConosco.css";
 import setaDireita from "../../assets/images/seta-direita-submit.svg";
 import iconePessoaBarraNavegacao from "../../assets/images/icone-pessoa-barra-navegacao.svg";
 import iconePessoaSorrindo from "../../assets/images/icone-pessoa-sorrindo-navegacao.svg";
@@ -8,18 +8,18 @@ import { Link } from "react-router-dom";
 
 const FaleConosco = () => {
   return (
-    <>
-      <div class="container-fale-conosco">
-        <div class="title-fale-conosco">
+    <main class="container-fale-conosco">
+      <section className="container-filho-fc">
+        <aside class="title-fale-conosco">
           
           <h1>Como Podemos Te Ajudar ?</h1>
-        </div>
+        </aside>
         <form action="" method="post">
-          <div class="form-group">
+          <aside class="name-fc">
             <label for="">Nome</label>
             <input type="text" name="nome" placeholder="Nome" />
-          </div>
-          <div class="form-group-double">
+          </aside>
+          <section class="mail-ra-spa">
             <label for="">E-Mail</label>
             <input
               type="email"
@@ -34,8 +34,9 @@ const FaleConosco = () => {
               name="ra"
               placeholder="RA"
             />
-          </div>
-          <div class="form-group submit-group">
+          </section>
+          
+          <section class="area-msg">
             <textarea
               name="mensagem"
               cols="20"
@@ -43,33 +44,16 @@ const FaleConosco = () => {
               placeholder="Mensagem"
             ></textarea>
            
-          </div>
-          <div className="engloba-botão">
+          </section>
+          <aside className="engloba-botão">
           <button className="icon-area" type="submit">
               <p>Enviar</p>
             </button>
-            </div>
+            </aside>
         </form>
-        <div class="circle-container">
-          <Link to="/faq" class="circle">? </Link>
-          
-        </div>
-        <div class="barra-navegacao none">
-          <div>
-            <img src={iconePessoaBarraNavegacao} alt="Icone de Login" />
-            Login
-          </div>
-          <div>
-            <img src={iconePessoaSorrindo} alt="Icone de Pessoa Sorrindo" />
-            Saude
-          </div>
-          <div>
-            <img src={iconeCartaNavegacao} alt="Icone de uma Carta" />
-            Denuncia
-          </div>
-        </div>
-      </div>
-    </>
+    
+      </section>
+    </main>
   );
 };
 

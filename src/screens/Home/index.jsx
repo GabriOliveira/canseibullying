@@ -34,8 +34,8 @@ const Home = () => {
                       </p>
                   </Link>
                 </button>
-              <p>Ou</p>
                 <button class="botão-opções">
+                  
                   <Link to="/professor" className="no-decoration"><p>Sou Professor
                     <img src={iconePessoa} alt="Pato Anônimo" class="imagem-lado" />
                   </p>
