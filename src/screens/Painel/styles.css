@@ -1,0 +1,130 @@
+@import url("../../assets/fonts/fonts.css");
+
+.container-painel {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(to right, #210b2c, #007eab, #210b2c);  font-family: var(--josefin);
+}
+
+.box-title-painel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 3%;
+}
+.title-painel {
+  color: #fff;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 37px;
+  padding-top: 10px;
+}
+.box {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+}
+
+.box-do-painel {
+ 
+  font-size: 23px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  border-radius: 40px;
+  height: 80%;
+  border: white solid;
+  
+  background-color: #007eab;
+}
+.box-do-painel textarea{
+  color: white;
+  border: 1px #ffffff solid;
+  border-radius: 5px;
+  
+}
+
+.box-do-painel textarea::-webkit-scrollbar{
+background-color: #210b2c;
+border-radius: 5px;
+
+}
+
+.box-do-painel textarea::-webkit-scrollbar-thumb{
+  background-color: white;
+  border-radius: 5px;
+  
+  }
+
+ 
+  
+    
+.textarea-painel {
+ 
+  width: 90%;
+  height: 80%;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border-radius: 4px;
+  background-color: transparent;
+  font-size: 23px;
+  resize: none;
+}
+
+.caixa-texto{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+}
+
+.title-box {
+  margin: 3%;
+  color: #ffffff;
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1%;
+  border-radius: 1.7rem;
+  background-color: #210b2c
+}
+.title-box > h4 {
+  font-size: x-large;
+}
+
+.seta-painel {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 100%;
+}
+
+.seta-esquerda {
+  height: 100%;
+  transform: scaleX(-1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.seta-painel:hover {
+  filter: contrast(50%);
+  
+}
+
+@media only screen and (max-width: 900px) {
+  .content-painel {
+    width: 70%;
+  }
+}

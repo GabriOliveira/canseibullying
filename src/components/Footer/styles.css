@@ -1,0 +1,13 @@
+@import url("../../assets/colors/colors.css");
+@import url("../../assets/fonts/fonts.css");
+
+footer {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  
+  background-color: #210b2c;
+  color: white;
+  
+  position: absolute;
+}
