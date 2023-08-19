@@ -32,7 +32,6 @@
   justify-content: center;
   text-align: center;
   padding: 1%;
-  justify-content: censter;
   flex-direction: column;
 }
 .container-login form {
@@ -49,7 +48,7 @@
 align-items: center;
 justify-content: center;
 width: 100%;
-height: 50%;
+height: 100%;
 }
 .buttons-login {
   margin: 10px 0;
@@ -62,13 +61,16 @@ height: 50%;
 .buttons-login input {
   border: none;
   width: 70%;
-  padding: 1.3%;
-  border-radius: 15px;
+  padding: 1rem;
   font-size: medium;
-  background-color: var(--color-white);
+  color: #ffffff;
+  background-color: transparent;
+  border-bottom: solid #210b2c ;
  
 }
-
+.input-logar::placeholder {
+  color: #ffffff70;
+}
 
 .buttons-login label {
   text-align: left;
@@ -99,6 +101,18 @@ height: 50%;
   font-size: large;
 }
 
+.alinhar{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  flex-direction: column;
+}
+
+.buttons-login input{
+  font-size: 1.5rem;
+}
+
 .button-group-login {
   display: flex;
   align-items: center;
@@ -124,18 +138,18 @@ height: 50%;
   box-shadow: 0 12px 12px black;
   line-height: 32px;
   text-align: center;
-  width: 15%;
-  min-width: 90px;
-  min-height: 32px;
+  width: 30%;
   background: #210b2c;
   color: white;
   border-radius: 50px;
   border: none;
-  
+  font-size: 1.5rem;
+  padding: 1rem;
   text-decoration: none;
 }
-.texto-button {
+.texto-abaixo{
   text-decoration: none;
+  color: #0aa7e0;
 }
 
 .button-group button {
@@ -153,13 +167,30 @@ height: 50%;
   border-radius: 50px;
   border: none;
   transform: translateY(0);
+
+}
+
+.abaixo-input{
+  display: flex;
+  flex-direction: row;
+  width: 70%;
+  justify-content: space-between;
+  text-align: center;
+  font: 800;
+  
+  font-size: 1.5rem;
+}
+
+input:focus {
+  outline: none;
 }
 
 .button-group button:hover,
 .botão-cadastro:hover{
   transform: translateY(10px);
-  box-shadow: 0 8px 12px black;
-}
+  transition: 300ms ease-in-out;
+
+  box-shadow: 0 8px 12px black;}
 
 .pato {
   width: 130px;
@@ -167,8 +198,8 @@ height: 50%;
 }
 
 .circle-container-login {
-  width: 90%;
-  min-height: 80%;
+  width: 100%;
+  height: 80%;
   display: flex;
   align-items: flex-end;
   justify-content: flex-end;
@@ -182,11 +213,19 @@ height: 50%;
   align-items: center;
   justify-content: center;
   border-radius: 50px;
-
-  height: 145%;
+height: 100%;
  width: 10%;
   background-color: #007eab;
   animation: pula 2s ease infinite;
+}
+
+.botões-de-ação{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 50%;
+  height: 100%;
 }
 
 @media only screen and (max-width: 500px) {

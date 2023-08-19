@@ -11,38 +11,59 @@ const Login = () => {
   return (
     <>
       <main class="container-login">
-        <figure>
-        <img src={sirene} class="pato" alt="logo site" className="icon-site"/>
-        </figure>
-        <section className="container-inputs">
-        <form action="" method="post">
-          <aside class="buttons-login">
-            <label for="" ></label>
-            <input type="email" placeholder="E-mail" />
+        <section className="alinhar">
+          <figure>
+            <img
+              src={sirene}
+              class="pato"
+              alt="logo site"
+              className="icon-site"
+            />
+          </figure>
+          <aside className="container-inputs">
+            <form action="" method="post">
+              <aside class="buttons-login">
+                <label for=""></label>
+                <input
+                  type="email"
+                  placeholder="E-mail"
+                  className="input-logar"
+                />
+              </aside>
+              <aside class="buttons-login">
+                <label for=""></label>
+                <input
+                  type="password"
+                  placeholder="Senha"
+                  className="input-logar"
+                />
+                <aside className="abaixo-input">
+                  <a href="/esquecisenha" className="texto-abaixo">
+                    Esqueceu a senha?{" "}
+                  </a>
+
+                  <a href="/cadastrar" className="texto-abaixo">
+                    Cadastrar{" "}
+                  </a>
+                </aside>
+              </aside>
+              <section className="botões-de-ação">
+                <aside class="buttons-login">
+                  <figure class="button-group-login">
+                    <Link to="/" className="botão-cadastro">
+                      Entrar
+                    </Link>
+                  </figure>
+                  <figure class="circle-container-login">
+                    <Link to="/faq" class="circle-login">
+                      ?
+                    </Link>
+                  </figure>
+                </aside>
+              </section>
+            </form>
           </aside>
-          <aside class="buttons-login">
-            <label for=""></label>
-            <input type="password" placeholder="Senha" />
-            <p>
-              <a href="#">Esqueceu a senha? </a>
-            </p>
-          </aside>
-          <aside class="buttons-login">
-            <figure class="button-group-login">
-              <button type="submit" className="botão-cadastro"> <Link to="/" className="no-decoration">Entrar</Link></button>
-            </figure>
-          </aside>
-          <aside class="buttons-login">
-            <figure class="button-group-login">
-             <button type="submit" className="botão-cadastro"> <Link to="/cadastrar" className="no-decoration">Cadastrar-se</Link></button>
-            </figure>
-            <figure class="circle-container-login">
-        <Link to="/faq" class="circle-login">?</Link>
-        </figure>
-          </aside>
-        </form>
         </section>
-        
       </main>
     </>
   );

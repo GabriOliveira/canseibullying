@@ -39,7 +39,7 @@
 }
 
 .container-filho-fc{
-  height: 40%;
+  height: 70%;
   width: 100%;
   display: flex;
   
@@ -48,11 +48,14 @@
   justify-content: center;
 }
 
+
+
 .container-filho-fc h1 {
   margin: 0;
   padding: 0;
   color: white;
   font-family: "Roboto", sans-serif;
+  font-size: 2rem;
 }
 
 .container-fale-conosco form {
@@ -105,7 +108,9 @@ input::placeholder,
 textarea::placeholder {
   color: rgb(100, 83, 122);
   font-family: "Roboto", sans-serif;
+  font-size: 1.5rem;
 }
+
 .name-fc textarea {
   width: 100%;
 }
@@ -121,12 +126,10 @@ textarea::placeholder {
   cursor: pointer;
   background-color: #210b2c;
   border-radius: 50px;
-  width: 15%;
+  width: 100%;
   border: none;
   justify-content: center;
   box-shadow: 0 12px 12px black;
-
-  padding: 2.2%;
   font-family: "Roboto", sans-serif;
   text-align: center;
 
@@ -144,25 +147,35 @@ textarea::placeholder {
   box-shadow: 0 8px 12px black;
 }
 
+.name-fc .mail-ra-spa textarea:focus {
+  outline: none;
+}
+.container-filho-fc form{
+  padding-bottom: 1%;
+}
+
 .engloba-botão {
   display: flex;
   text-align: center;
   justify-content: center;
   align-items: center;
+  width: 50%;
 }
 
 .mail-ra-spa {
   display: flex;
-
+  font-size: 1.5rem;
   margin: 10px 0;
   min-width: 100%;
   justify-content: space-between;
 }
-.input-double {
+.input-double-fc {
   border: none;
   border-radius: 5px;
   padding: 1%;
   width: 48%;
+  font-size: 1.5rem;
+
 }
 
 .circle-container {
@@ -204,6 +217,8 @@ textarea::placeholder {
   .name-fc > input::placeholder,
   .mail-ra-spa > input::placeholder {
     color: transparent;
+    font-size: 1.5rem;
+
   }
   .mail-ra-spa > {
     background-color: var(--color-white);
@@ -222,15 +237,17 @@ textarea::placeholder {
     justify-content: space-around;
     flex-direction: column;
     margin: 3px 0;
+    font-size: 1.5rem;
+
     
   }
-  .input-double {
+  .input-double-fc {
     width: 100%;
     margin: 3px 0;
     
   }
 
-  .input-double:nth-child(4) {
+  .input-double-fc:nth-child(4) {
     width: 70%;
   }
   .circle-container {

@@ -23,14 +23,14 @@ const FaleConosco = () => {
             <label for="">E-Mail</label>
             <input
               type="email"
-              class="input-double"
+              class="input-double-fc"
               name="email"
               placeholder="E-Mail"
             />
             <label for="">RA </label>
             <input
               type="text"
-              class="input-double"
+              class="input-double-fc"
               name="ra"
               placeholder="RA"
             />
@@ -41,17 +41,18 @@ const FaleConosco = () => {
               name="mensagem"
               cols="20"
               rows="10"
-              placeholder="Mensagem"
+              placeholder="Escreva sua mensagem..."
             ></textarea>
+            
            
           </section>
-          <aside className="engloba-botão">
+          
+        </form>
+        <aside className="engloba-botão">
           <button className="icon-area" type="submit">
               <p>Enviar</p>
             </button>
             </aside>
-        </form>
-    
       </section>
     </main>
   );

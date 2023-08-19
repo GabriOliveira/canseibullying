@@ -6,36 +6,63 @@ import { Link } from "react-router-dom";
 
 const Cadastro = () => {
   return (
-    <main className="container-pai">
-<section className="organizar-cadastro">
-       <aside class="container-cadastro">
-        <form action="" method="post">
-          <aside className="form-group-cadastro">
-            <label for=""></label>
-            <input type="email" placeholder="E-mail" />
-         
-            <label for=""></label>
-            <input type="password" placeholder="Senha" />
-      
-          
-            <label for=""></label>
-            <input type="text" placeholder="RA ou SIAPE" />
-            <p>
-              <a href="/entrar">Já é cadastrado?</a>
-            </p>
-            </aside>
-           
-          <aside class="form-group-cadastro">
-            <button type="submit" class="button-group">
-              {" "}
-              Finalizar
-            </button>
+   <main class="container-cadastro">
+        <section className="alinhar-cad">
+          <figure>
+            <img
+              src={sirene}
+              class="foto-sirene"
+              alt="logo site"
+            />
+          </figure>
+          <aside className="container-inputs-cad">
+            <form action="" method="post">
+              <aside class="buttons-login-cad">
+                <label for=""></label>
+                <input
+                  type="email"
+                  placeholder="E-mail"
+                  className="input-logar-cad"
+                />
+              </aside>
+              <aside class="buttons-login-cad">
+                <label for=""></label>
+                <input
+                  type="password"
+                  placeholder="Senha"
+                  className="input-logar-cad"
+                />
+                 </aside>
+                 <aside class="buttons-login-cad">
+                <label for=""></label>
+                <input
+                  type="number"
+                  placeholder="RA ou SIAPE"
+                  className="input-logar-cad"
+                />
+
+                 </aside>
+                <aside className="abaixo-input-cad">
+                  <a href="/esquecisenha" className="texto-abaixo-cad">
+                    Esqueceu a senha?{" "}
+                  </a>
+
+               
+              </aside>
+              <section className="botões-de-ação-cad">
+                <aside class="buttons-login-cad">
+                  <figure class="button-group-login-cad">
+                    <Link to="/entrar" className="botão-cadastro-cad">
+                      Finalizar
+                    </Link>
+                  </figure>
+                  
+                </aside>
+              </section>
+            </form>
           </aside>
-        </form>
-       
-      </aside>
-      </section>
-    </main>
+        </section>
+      </main>
   );
 };
 

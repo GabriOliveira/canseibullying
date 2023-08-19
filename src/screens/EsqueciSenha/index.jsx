@@ -9,7 +9,7 @@ import { Link } from "react-router-dom";
 const EsqueciSenha = () => {
   return (
     <>
-      <div class="container-fale-conosco">
+      <div class="container-esqueci-senha">
         <div class="title-fale-conosco">
           
           <h1>Como Podemos Te Ajudar ?</h1>
