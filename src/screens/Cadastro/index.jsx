@@ -15,25 +15,25 @@ const Cadastro = () => {
               alt="logo site"
             />
           </figure>
-          <aside className="container-inputs-cad">
+          <article className="container-inputs-cad">
             <form action="" method="post">
-              <aside class="buttons-login-cad">
+              <article class="buttons-login-cad">
                 <label for=""></label>
                 <input
                   type="email"
                   placeholder="E-mail"
                   className="input-logar-cad"
                 />
-              </aside>
-              <aside class="buttons-login-cad">
+              </article>
+              <article class="buttons-login-cad">
                 <label for=""></label>
                 <input
                   type="password"
                   placeholder="Senha"
                   className="input-logar-cad"
                 />
-                 </aside>
-                 <aside class="buttons-login-cad">
+                 </article>
+                 <article class="buttons-login-cad">
                 <label for=""></label>
                 <input
                   type="number"
@@ -41,26 +41,26 @@ const Cadastro = () => {
                   className="input-logar-cad"
                 />
 
-                 </aside>
-                <aside className="abaixo-input-cad">
+                 </article>
+                <article className="abaixo-input-cad">
                   <a href="/esquecisenha" className="texto-abaixo-cad">
                     Esqueceu a senha?{" "}
                   </a>
 
                
-              </aside>
+              </article>
               <section className="botões-de-ação-cad">
-                <aside class="buttons-login-cad">
+                <article class="buttons-login-cad">
                   <figure class="button-group-login-cad">
                     <Link to="/entrar" className="botão-cadastro-cad">
                       Finalizar
                     </Link>
                   </figure>
                   
-                </aside>
+                </article>
               </section>
             </form>
-          </aside>
+          </article>
         </section>
       </main>
   );

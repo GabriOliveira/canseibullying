@@ -20,24 +20,24 @@ const Login = () => {
               className="icon-site"
             />
           </figure>
-          <aside className="container-inputs">
+          <article  className="container-inputs">
             <form action="" method="post">
-              <aside class="buttons-login">
+              <article  class="buttons-login">
                 <label for=""></label>
                 <input
                   type="email"
                   placeholder="E-mail"
                   className="input-logar"
                 />
-              </aside>
-              <aside class="buttons-login">
+              </article >
+              <article  class="buttons-login">
                 <label for=""></label>
                 <input
                   type="password"
                   placeholder="Senha"
                   className="input-logar"
                 />
-                <aside className="abaixo-input">
+                <article  className="abaixo-input">
                   <a href="/esquecisenha" className="texto-abaixo">
                     Esqueceu a senha?{" "}
                   </a>
@@ -45,10 +45,10 @@ const Login = () => {
                   <a href="/cadastrar" className="texto-abaixo">
                     Cadastrar{" "}
                   </a>
-                </aside>
-              </aside>
+                </article >
+              </article >
               <section className="botões-de-ação">
-                <aside class="buttons-login">
+                <article  class="buttons-login">
                   <figure class="button-group-login">
                     <Link to="/" className="botão-cadastro">
                       Entrar
@@ -59,10 +59,10 @@ const Login = () => {
                       ?
                     </Link>
                   </figure>
-                </aside>
+                </article >
               </section>
             </form>
-          </aside>
+          </article >
         </section>
       </main>
     </>

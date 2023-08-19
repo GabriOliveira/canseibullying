@@ -10,15 +10,15 @@ const FaleConosco = () => {
   return (
     <main class="container-fale-conosco">
       <section className="container-filho-fc">
-        <aside class="title-fale-conosco">
+        <article class="title-fale-conosco">
           
           <h1>Como Podemos Te Ajudar ?</h1>
-        </aside>
+        </article>
         <form action="" method="post">
-          <aside class="name-fc">
+          <article class="name-fc">
             <label for="">Nome</label>
             <input type="text" name="nome" placeholder="Nome" />
-          </aside>
+          </article>
           <section class="mail-ra-spa">
             <label for="">E-Mail</label>
             <input
@@ -48,11 +48,11 @@ const FaleConosco = () => {
           </section>
           
         </form>
-        <aside className="engloba-botão">
+        <article className="engloba-botão">
           <button className="icon-area" type="submit">
               <p>Enviar</p>
             </button>
-            </aside>
+            </article>
       </section>
     </main>
   );

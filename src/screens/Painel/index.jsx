@@ -11,7 +11,7 @@ const Painel = () => {
         <h1 className="title-painel">Painel de Denúncias</h1>
             <h4 className="title-box">Titulo</h4>
           
-          <aside className="caixa-texto">
+          <article className="caixa-texto">
           <figure className="seta-esquerda">
         <img alt="seta esquerda" src={setaDireita}  />
         </figure>
@@ -47,7 +47,7 @@ const Painel = () => {
             <figure className="seta-painel">
             <img alt="seta direita" src={setaDireita}  />
         </figure>
-          </aside>
+          </article>
         </section>
       </section>
     </main>

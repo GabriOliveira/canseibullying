@@ -1,0 +1,145 @@
+.container-anom{
+   
+        height: 100%;
+        width: 100%;
+        display: flex;
+        background-image: linear-gradient(to top, #210b2c, #ffff , #210b2c);
+        color: #fff;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        
+      
+}
+
+.container-filho-anom{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  height: 90%;
+  width: 100%;
+}
+.janela-anom{
+    background-image: linear-gradient(to top, #ffff, #210b2c);
+    box-shadow: black 0 20px 35px;
+    width: 70%;
+    height: 80%;
+    border-radius: 10px;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.input-info-anom{
+    display: flex;
+  flex-direction: column;
+  width: 90%;
+  
+
+}
+
+.input-info-anom input{
+  display: flex;
+  text-align: left;
+  justify-content: space-around;
+  height: 100%;
+  width: 100%;
+    border: none;
+  font-size: 1.5rem;
+  padding: 2%;
+  background-color: #210b2cbe;
+  border-radius: 3px;
+  color: #fff;
+  border-bottom: solid white 1px ;
+}
+
+
+.denuncia-anom{
+    width: 100%;
+    height: 100%;
+    padding: 3%;
+    
+}
+
+
+
+.area-texto-anom{
+  padding: 1%;
+    height: 100%;
+    width: 100%;
+    background-color: #210b2cbe;
+    border: solid white 1px ;
+    border-top: transparent;    
+    
+    outline: none;
+    color: #fff;
+}
+
+#title{
+  font-size: 1.5rem;
+  padding: 2%;
+}
+.input-info-anom input::placeholder, .denuncia-anom textarea::placeholder {
+  color: rgb(240, 238, 238);
+  font-family: "Roboto", sans-serif;
+}
+
+
+.option-anonim{
+    display: flex;
+  text-decoration: none;
+  color: white;
+  font-size: x-large;
+  border-radius: 1rem;
+  border: none;
+  box-shadow: 0 8px 12px black;
+
+}
+
+.avaliar-agrupar{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 100%;
+    height: 10%;
+    background-color: transparent;
+    margin-right: 5%;
+    position: absolute;
+    bottom: 10%;
+    right:  0;
+}
+
+.enviar-agrupar-anonim{
+    display: flex;
+    width: 10%;
+    height: 10%;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+   
+
+}
+
+.option-anonim{
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 800;
+    width: 100%;
+    height: 80%;
+    cursor: pointer;
+    background-color: #43165a;
+
+}
+
+.option-anonim:hover{
+  transform: translateY(10px);
+  transition: 300ms ease-in-out;
+  box-shadow: 0 8px 12px black;
+}

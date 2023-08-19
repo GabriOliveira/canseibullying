@@ -14,7 +14,7 @@ const Home = () => {
 
         <section className="tipo-de-denuncia">
 
-          <section className="seguradora-denuncia">
+          <article className="seguradora-denuncia">
           <h1 className="title-home">Selcione O Tipo de Denuncia:</h1>
 
                  
@@ -33,7 +33,7 @@ const Home = () => {
                       </p>
                   </Link>
                  
-          </section>
+          </article>
         </section>
       </main>
     </>

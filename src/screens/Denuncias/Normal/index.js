@@ -1,11 +1,11 @@
 import { Link } from "react-router-dom";
-import "./styles.css";
+import "./styles-dnormal.css";
 
 
 const Normal = () => {
   return (
-    <>
-       <div className="container-anom">
+    < main className="container-normal">
+       <div >
        <div className="janela">
       <h1 id="title">Faça sua Denuncia Anonimamente</h1>
       <div className="input-info">
@@ -28,7 +28,7 @@ const Normal = () => {
         </button>
         </div>
         </div>
-    </>
+    </main>
   );
 };
 

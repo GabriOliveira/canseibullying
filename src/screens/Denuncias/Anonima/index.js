@@ -1,36 +1,29 @@
 import { Link } from "react-router-dom";
-import "./styles.css";
+import "./styles-danonim.css";
 
 const Anonima = () => {
   return (
-    <>
-      <div className="container-anom">
-        <div className="janela">
+    <main className="container-anom">
+      <section className="container-filho-anom" >
+        <article className="janela-anom">
           <h1 id="title">Faça sua Denuncia Anonimamente</h1>
-          <div className="input-info">
+          <aside className="input-info-anom">
             <input type="text" placeholder="insira o apelido (opcional)" />
             <input type="text" placeholder="insira o titulo" />
-          </div>
-          <div className="denuncia">
+          </aside>
+          <aside className="denuncia-anom">
             <textarea
               placeholder="insira a mensagem..."
-              className="area-texto"
+              className="area-texto-anom"
             ></textarea>
-          </div>
-        </div>
-        <div className="enviar-agrupar">
-          <button className="option" type="submit" onClick="#">Enviar</button>
-        </div>
-        <div className="avaliar-agrupar">
-          
-            <Link to="/feedback" className="option">
-           
-              ⭐
-            </Link>
-          
-        </div>
-      </div>
-    </>
+          </aside>
+        </article>
+        <article className="enviar-agrupar-anonim">
+          <button className="option-anonim" type="submit" onClick="/faq">Enviar</button>
+        </article>
+       
+      </section>
+    </main>
   );
 };
 
