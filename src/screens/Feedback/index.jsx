@@ -1,4 +1,4 @@
-import "./styles.css";
+import "./styles-feedback.css";
 import setaDireita from "../../assets/images/seta-direita-submit.svg";
 import iconePessoaBarraNavegacao from "../../assets/images/icone-pessoa-barra-navegacao.svg";
 import iconePessoaSorrindo from "../../assets/images/icone-pessoa-sorrindo-navegacao.svg";
@@ -8,34 +8,34 @@ import { Link } from "react-router-dom";
 
 const Feedback = () => {
   return (
-    <>
-      <div class="container-fale-conosco">
-        <div class="title-fale-conosco">
+    <main class="container-feedback">
+      <section className="container-filho-feedback">
+        <article class="title-feedback">
           
           <h1>Como Podemos Te Ajudar ?</h1>
-        </div>
+        </article>
         <form action="" method="post">
-          <div class="form-group">
+          <article class="form-group-feedback">
             <label for="">Nome</label>
             <input type="text" name="nome" placeholder="Nome" />
-          </div>
-          <div class="form-group-double">
+          </article>
+          <aside class="form-group-double-feedback">
             <label for="">E-Mail</label>
             <input
               type="email"
-              class="input-double"
+              class="input-double-feedback"
               name="email"
               placeholder="E-Mail"
             />
             <label for="">RA </label>
             <input
               type="text"
-              class="input-double"
+              class="input-double-feedback"
               name="ra"
               placeholder="RA"
             />
-          </div>
-          <div class="form-group submit-group">
+          </aside>
+          <aside class="form-group submit-group-feedback">
             <textarea
               name="mensagem"
               cols="20"
@@ -43,33 +43,17 @@ const Feedback = () => {
               placeholder="Mensagem"
             ></textarea>
            
-          </div>
-          <div className="engloba-botão">
-          <button className="icon-area" type="submit">
+          </aside>
+          <article className="engloba-botão-feedback">
+          <button className="icon-area-feedback" type="submit">
               <p>Enviar</p>
             </button>
-            </div>
+            </article>
         </form>
-        <div class="circle-container">
-          <Link to="/faq" class="circle">? </Link>
-          
-        </div>
-        <div class="barra-navegacao none">
-          <div>
-            <img src={iconePessoaBarraNavegacao} alt="Icone de Login" />
-            Login
-          </div>
-          <div>
-            <img src={iconePessoaSorrindo} alt="Icone de Pessoa Sorrindo" />
-            Saude
-          </div>
-          <div>
-            <img src={iconeCartaNavegacao} alt="Icone de uma Carta" />
-            Denuncia
-          </div>
-        </div>
-      </div>
-    </>
+       
+        
+      </section>
+    </main>
   );
 };
 

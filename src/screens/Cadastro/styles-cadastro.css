@@ -61,7 +61,7 @@ height: 100%;
   font-size: medium;
   color: #ffffff;
   background-color: transparent;
-  border-bottom: solid #210b2c ;
+  border-bottom: solid #ffffff ;
 
 
  
@@ -200,7 +200,7 @@ input:focus {
   width: 130px;
   height: 130px;
   border-radius: 50%;
-  border: purple solid ;
+  border: rgb(255, 255, 255) solid ;
 
 }
 

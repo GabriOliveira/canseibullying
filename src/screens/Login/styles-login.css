@@ -20,7 +20,7 @@
 .icon-site{
   width: 130px;
   border-radius: 50%;
-  border: purple solid ;
+  border: rgb(255, 255, 255) solid ;
 }
 
 .container-login {
@@ -62,10 +62,10 @@ height: 100%;
   border: none;
   width: 70%;
   padding: 1rem;
-  font-size: medium;
+  font-size: 1.5rem;
   color: #ffffff;
   background-color: transparent;
-  border-bottom: solid #210b2c ;
+  border-bottom: solid #ffffff ;
  
 }
 .input-logar::placeholder {
@@ -80,7 +80,7 @@ height: 100%;
   font-family: 'Roboto', sans-serif;
 
   line-height: 36px;
-  font-size: x-large;
+  font-size: 1.5rem;
 }
 
 .buttons-login p {
@@ -98,7 +98,7 @@ height: 100%;
   text-decoration: none;
   font-weight: bold;
   font-family: 'Roboto', sans-serif;
-  font-size: large;
+  font-size: 1.5rem;
 }
 
 .alinhar{

@@ -6,16 +6,23 @@
   box-sizing: border-box;
 }
 
-.container-fale-conosco {
-  min-height: 87.6%;
+.container-perfil {
+  height: 100%;
+  width: 100%;;
+  background-image: linear-gradient(to bottom, #007eab, #007eab, #210b2c );
+  color: aliceblue;
+}
+
+.container-filho-perfil{
+  height: 100%;
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-image: linear-gradient(to bottom, #007eab, #007eab, #210b2c );
-  color: aliceblue;
-  position: static;
+  text-align: center;
+
+
 }
 
 .perfil-e-desc{
@@ -24,7 +31,11 @@
   justify-content: center;
   flex-direction: column;
   width: 35%;
+  height: 75%;
   text-align: center;
+  border-radius: 5px;
+  background-color: #210b2c79;
+
 }
 
 .perfil-e-desc img{
