@@ -9,6 +9,7 @@
   width: 100%;
 }
 
+
 /* Style the links inside the navigation bar */
 .topnav a {
   float: left;
@@ -17,17 +18,17 @@
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
-  font-size: 17px;
+  font-size: 20px;
 }
+
+
 
 .topnav a:hover {
-  background-color: #ddd;
-  color: black;
+  background-color: #007eab;
 }
-
 .topnav a.active {
   background-color: #007eab;
-  color: white;
+  
 }
 
 .topnav .icon {
@@ -45,6 +46,12 @@
 }
 
 @media screen and (max-width: 600px) {
+
+  .topnav{
+    height: 8%;
+
+  }
+
   .topnav.responsive {
     position: relative;
   }
@@ -61,6 +68,6 @@
 }
 
 .navbarIcon {
-  height: 26px;
-  width: 26px;
+  height: 30px;
+  width: 30px;
 }

@@ -46,6 +46,7 @@
   display: flex;
   text-align: left;
   justify-content: space-around;
+ 
   height: 100%;
   width: 100%;
     border: none;
@@ -74,8 +75,11 @@
     background-color: #210b2cbe;
     border: solid white 1px ;
     border-top: transparent;    
-    
+    font-family: "Roboto", sans-serif;
+    font-size: 1.5rem;
     outline: none;
+    border-radius: 5px;
+    resize: none;
     color: #fff;
 }
 
@@ -84,7 +88,7 @@
   padding: 2%;
 }
 .input-info-anom input::placeholder, .denuncia-anom textarea::placeholder {
-  color: rgb(240, 238, 238);
+  color: rgba(240, 238, 238, 0.678);
   font-family: "Roboto", sans-serif;
 }
 
@@ -142,4 +146,44 @@
   transform: translateY(10px);
   transition: 300ms ease-in-out;
   box-shadow: 0 8px 12px black;
+}
+
+@media screen and (max-width : 600px) {
+  .container-filho-anom{
+    padding-top: 5%;
+
+  }
+  .janela-anom {
+    width: 100%;
+  }
+  
+  #title{
+    font-size: 25px;
+    padding: 5%;
+  }
+
+  .input-info-anom input{
+    font-size: 20px;
+    text-align: center;
+    
+  }
+  .input-info-anom input::placeholder, .denuncia-anom textarea::placeholder {
+  font-size: 20px;
+  }
+    .area-texto-anom{
+      text-align: center;
+      font-size: 18px;
+    }
+    .enviar-agrupar-anonim{
+      padding-top: 5%;
+      width: 100%;
+      height: 15%;
+    
+    }
+    .option-anonim{
+      width: 50%;
+    }
+
+    
+    
 }

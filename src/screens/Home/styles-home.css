@@ -70,8 +70,8 @@ body {
   border: none;
   text-decoration: none;
   color: #cad9ef;
-  font-size: calc(1rem + 0.6vw);
-  font-family: var(--josefine);
+  font-size: 1.5rem;
+  font-family: 'Roboto', sans-serif;
   background-color: #210b2c;
 }
 
@@ -140,52 +140,27 @@ body {
   height: auto;
 }
 
-@media screen and (max-width: 1110px) {
-  .mao-esquerda {
-    position: absolute;
-    left: calc(27% - 6vw);
-    top: calc(29% - 6vw);
+
+
+@media screen and (max-width: 600px) {
+  
+  .tipo-de-denuncia{
+    width: 95%;
   }
+
+  .botão-opções{
+    height: 15%;
+    width: 70%;
+  }
+  
+.botão-opções:hover {
+  width: 70%;
+ 
 }
 
-@media screen and (max-width: 991px) {
-  .row-nav {
-    flex-direction: column;
+  .botão-opções p{
+    font-size: 1.3rem;
   }
-
-
-  p,
-  .text-responsive {
-    font-size: calc(0.7rem + 1vw);
-    text-decoration: none;
-  }
-}
-
-@media screen and (max-width: 930px) {
-  .mao-esquerda {
-    position: absolute;
-    left: calc(27% - 6vw);
-    top: calc(29% - 6vw);
-  }
-}
-
-@media screen and (max-width: 874px) {
-  .mao-esquerda {
-    position: absolute;
-    left: calc(25% - 6vw);
-    top: calc(26% - 6vw);
-  }
-}
-
-@media screen and (max-width: 785px) {
-  .mao-esquerda {
-    position: absolute;
-    left: calc(23% - 6vw);
-    top: calc(24% - 6vw);
-  }
-}
-
-@media screen and (max-width: 647px) {
 
   h4,
   h3,

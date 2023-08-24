@@ -75,13 +75,21 @@
   justify-content: center;
   width: 100%;
   height: 100%;
-  resize: none;
+  
 }
 
 .area-msg textarea{
+  border: solid 2px white;
+  border-top: none;
+  background-color: transparent;
   font-size: 20px;
+  padding: 1%;
   width: 100%;
   height: 100%;
+  color: #fff;
+  border-radius: 5px;
+  resize: none;
+
 }
 
 .name-fc {
@@ -92,11 +100,13 @@
   
 }
 
-.name-fc input,
-textarea {
+.name-fc input{
   border: none;
-  font-size: 1.5rem;
+  border-bottom: solid 2px white;
+  color: #fff;
 
+  font-size: 1.5rem;
+  background-color: transparent;
   border-radius: 5px;
   padding: 1%;
   resize: none;
@@ -106,9 +116,10 @@ textarea {
 .mail-ra-spa,
 input::placeholder,
 textarea::placeholder {
-  color: rgb(100, 83, 122);
+  color: #ffffff2d;
   font-family: "Roboto", sans-serif;
   font-size: 1.5rem;
+  
 }
 
 .name-fc textarea {
@@ -125,20 +136,21 @@ textarea::placeholder {
   display: flex;
   cursor: pointer;
   background-color: #210b2c;
+  
   border-radius: 50px;
   width: 100%;
+  height: 100%;
   border: none;
   justify-content: center;
   box-shadow: 0 12px 12px black;
   font-family: "Roboto", sans-serif;
   text-align: center;
-
   align-items: center;
   color: #fff;
-  font-family: "Roboto", sans-serif;
-  font-size: larger;
+  font-size: 1.5rem;
   font-weight: 800;
 }
+
 
 .icon-area:hover {
   transform: translateY(10px);
@@ -147,7 +159,7 @@ textarea::placeholder {
   box-shadow: 0 8px 12px black;
 }
 
-.name-fc .mail-ra-spa textarea:focus {
+.mail-ra-spa, textarea:focus {
   outline: none;
 }
 .container-filho-fc form{
@@ -159,13 +171,16 @@ textarea::placeholder {
   text-align: center;
   justify-content: center;
   align-items: center;
-  width: 50%;
+  width: 10%;
+  height: 20%;
 }
 
 .mail-ra-spa {
   display: flex;
   font-size: 1.5rem;
   margin: 10px 0;
+  color: #fff;
+
   min-width: 100%;
   justify-content: space-between;
 }
@@ -173,9 +188,12 @@ textarea::placeholder {
   border: none;
   border-radius: 5px;
   padding: 1%;
+  color: #fff;
+
   width: 48%;
   font-size: 1.5rem;
-
+  border-bottom: solid 2px white;
+  background-color: transparent;
 }
 
 .circle-container {
@@ -201,63 +219,41 @@ textarea::placeholder {
   animation: pula 2s ease infinite;
 }
 
-@media only screen and (max-width: 420px) {
-  .container-fale-conosco {
-    background-color: var(--background-claro);
-  }
-  .container-fale-conosco form label {
-    display: contents;
-    color: #000000;
-  }
+@media only screen and (max-width: 600px) {
 
-  textarea {
-    background-color: var(--color-white);
-  }
-
-  .name-fc > input::placeholder,
-  .mail-ra-spa > input::placeholder {
-    color: transparent;
-    font-size: 1.5rem;
-
-  }
-  .mail-ra-spa > {
-    background-color: var(--color-white);
-  }
-
-  .mail-ra-spa input{
-  font-size: 1.5rem;
-  }
   .container-fale-conosco form {
-    width: 90%;
-  }
-  .container-fale-conosco h1 {
-    color: #fff;
-  }
-  .mail-ra-spa {
-    justify-content: space-around;
-    flex-direction: column;
-    margin: 3px 0;
-    font-size: 1.5rem;
-
-    
-  }
-  .input-double-fc {
     width: 100%;
-    margin: 3px 0;
-    
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
   }
 
-  .input-double-fc:nth-child(4) {
-    width: 70%;
+  .title-fale-conosco{
+    text-align: center;
   }
-  .circle-container {
-    width: 90%;
+  .title-fale-conosco h1{
+    font-size: 1.6rem;
+
   }
-  .circle {
-    min-width: 45px;
-    min-height: 40px;
-    border-radius: 200px;
-  }
+
+  .name-fc,
+.mail-ra-spa,
+input::placeholder,
+textarea::placeholder {
+  text-align: center;
+  font-size: 1.1rem;
+  
+}
+
+.engloba-botão{
+  width: 50%;
+}
+
+.icon-area{
+  height: 100%;
+}
+
 }
 
 .barra-navegacao {

@@ -55,7 +55,7 @@ const Navbar = () => {
               className={location.pathname === link.route ? "active" : ""}
             >
               <div>
-                <span className="a">{link.title}</span>
+                <span className="reload">{link.title}</span>
               </div>
             </Link>
           );
