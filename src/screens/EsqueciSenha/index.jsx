@@ -8,55 +8,19 @@ import { Link } from "react-router-dom";
 
 const EsqueciSenha = () => {
   return (
-    <>
-      <div class="container-esqueci-senha">
-        <div class="title-fale-es">
-          
-          <h1>Como Podemos Te Ajudar ?</h1>
-        </div>
-        <form action="" method="post">
-          <div class="form-group-es">
-            <label for="">Nome</label>
-            <input type="text" name="nome" placeholder="Nome" />
-          </div>
-          <div class="form-group-double-es">
-            <label for="">E-Mail</label>
-            <input
-              type="email"
-              class="input-double-es"
-              name="email"
-              placeholder="E-Mail"
-            />
-            <label for="">RA </label>
-            <input
-              type="text"
-              class="input-double-es"
-              name="ra"
-              placeholder="RA"
-            />
-          </div>
-          <div class="form-group submit-group-es">
-            <textarea
-              name="mensagem"
-              cols="20"
-              rows="10"
-              placeholder="Mensagem"
-            ></textarea>
-           
-          </div>
-          <div className="engloba-botão-es">
-          <button className="icon-area" type="submit-es">
-              <p>Enviar</p>
-            </button>
-            </div>
-        </form>
-        <div class="circle-container-es">
-          <Link to="/faq" class="circle-es">? </Link>
-          
-        </div>
-       
-      </div>
-    </>
+    <main className="container-esqueci-senha">
+     
+      <h1>Preencha os campos abaixo:</h1>
+      <article className="filho-es">
+      
+        <aside className="campos">
+          <input type="email" alt="email" placeholder="Email" />
+          <input type="password" alt="senha" placeholder="Nova Senha" />
+          <input type="password" alt="c-senha" placeholder="Confirmar Nova Senha" />
+          <button type="submit">Confirmar</button>
+        </aside>
+      </article>
+    </main>
   );
 };
 

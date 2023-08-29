@@ -24,12 +24,8 @@ const Perfil = () => {
           </p>
           <aside className="emotions">
             <p className="txt-sent">Fulano de Tal da Silva está se sentindo:</p>
-            <figure>
-              {" "}
-              <img className="happy" />
-              <img className="normal" />
-              <img className="sad" />
-              <img className="angry" />
+            <figure className="container-emotion">
+              <div className="conteudo-emotion"></div>
             </figure>
           </aside>
         </aside>

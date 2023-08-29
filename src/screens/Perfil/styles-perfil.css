@@ -49,3 +49,22 @@
   font-size: x-large;
   padding-top: 10px;
 }
+
+.container-emotion {
+  height: 25px;
+  background-color: #CCC;
+  position: relative;
+}
+.container-emotion .conteudo-emotion{
+ position: absolute;
+ height: 100%;
+ background-color: #0fd439;
+ animation: progress-animation 5s infinite;
+}
+@keyframes progress-animation{
+  0% { width: 0%;
+  background-color: red;
+  } 
+  100% { width: 100%;
+  }
+}

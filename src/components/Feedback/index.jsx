@@ -1,10 +1,5 @@
 import "./styles-feedback.css";
-import setaDireita from "../../assets/images/seta-direita-submit.svg";
-import iconePessoaBarraNavegacao from "../../assets/images/icone-pessoa-barra-navegacao.svg";
-import iconePessoaSorrindo from "../../assets/images/icone-pessoa-sorrindo-navegacao.svg";
-import iconeCartaNavegacao from "../../assets/images/icone-carta-navegacao.svg";
-import Faq from "../Faq";
-import { Link } from "react-router-dom";
+
 
 const Feedback = () => {
   return (

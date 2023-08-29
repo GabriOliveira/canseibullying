@@ -14,7 +14,6 @@ import Anonima from "./screens/Denuncias/Anonima/index"
 import Normal from "./screens/Denuncias/Normal";
 import Professor from "./screens/Denuncias/Professor";
 import EsqueciSenha from "./screens/EsqueciSenha/index.jsx";
-import Feedback from "./screens/Feedback";
 import Perfil from "./screens/Perfil";
 
 function App() {
@@ -33,7 +32,6 @@ function App() {
         <Route path="/normal" element={<Normal />} />
         <Route path="/professor" element={<Professor />} />
         <Route path="/esquecisenha" element={<EsqueciSenha />} />
-        <Route path="/feedback" element={<Feedback />} />
         <Route path="/perfil" element={<Perfil />} />
         <Route path="*" element={<NotFound />} />
       </Routes>

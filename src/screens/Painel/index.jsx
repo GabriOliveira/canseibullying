@@ -12,9 +12,11 @@ const Painel = () => {
             <h4 className="title-box">Titulo</h4>
           
           <article className="caixa-texto">
-          <figure className="seta-esquerda">
-        <img alt="seta esquerda" src={setaDireita}  />
+          <aside className="espaço-seta">
+          <figure className="alinhar-seta">
+        <img alt="seta esquerda" className="seta" src={setaDireita}  />
         </figure>
+        </aside>
             <textarea disabled className="textarea-painel">
               Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magnam
               maxime, Lorem ipsum dolor sit amet consectetur, adipisicing elit.
@@ -44,9 +46,11 @@ const Painel = () => {
               dolor sit amet consectetur, adipisicing elit. Magnam maxime, Lorem
               ipsum dolor sit amet consectetur, adipisicing elit. Magnam maxime,
             </textarea>
-            <figure className="seta-painel">
-            <img alt="seta direita" src={setaDireita}  />
+            <aside className="espaço-seta">
+            <figure className="alinhar-seta" >
+            <img alt="seta direita" className="seta-aocontrario" src={setaDireita}  />
         </figure>
+        </aside>
           </article>
         </section>
       </section>

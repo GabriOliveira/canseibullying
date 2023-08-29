@@ -29,14 +29,14 @@ const Faq = () => {
   ];
 
   return (
-    <div className="container-faq">
+    <main className="container-faq">
       <h1 className="faq-title">Perguntas frequentes (FAQ)</h1>
-      <div className="card-box">
+      <article className="card-box">
         {info.map(({ title, content }) => {
           return <Card content={content} title={title} />;
         })}
-      </div>
-    </div>
+      </article>
+    </main>
   );
 };
 

@@ -35,10 +35,7 @@ const Navbar = () => {
       route: "/perfil",
       title: "Perfil",
     },
-    {
-      route: "/feedback",
-      title: "FeedBack",
-    },
+    
     {
       route: "/esquecisenha",
       title: "Esqueci a Senha",
