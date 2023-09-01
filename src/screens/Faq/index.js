@@ -16,7 +16,7 @@ const Faq = () => {
       content: "Alunos e Professores, assim também como pessoas fora da area escolar, porém o foco é o combate ao cyberbullying dentro das escolas. ",
     }, {
       title: "Como relatar um caso?",
-      content: "Para relatar um caso é simples, se você já tem o cadastro feito na plataforma e ter o login validado com sucesso, após você acessar sua conta, basta entrar  ",
+      content: "Para relatar um caso é simples, se você já tem o cadastro feito na plataforma e ter o login validado com sucesso, após você acessar sua conta, basta entrar e escolher entre as opções de Denuncia aberta ou Anonima",
     },
     {
       title: "Posso usar um apelido anonimo?",

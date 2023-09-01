@@ -1,8 +1,189 @@
 
 
 .container-normal{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
     height: 100%;
     width: 100%;
     background-image: linear-gradient(to top, #210b2c, #007eab , #210b2c);
-
 }
+
+.container-filho-aberta{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    height: 90%;
+    width: 100%;
+  }
+  .janela-aberta{
+      background-image: linear-gradient(to top,#210b2c, #007eab,#210b2c);
+      box-shadow: black 0 20px 35px;
+      width: 70%;
+      height: 80%;
+      border-radius: 10px;
+      display: flex;
+      text-align: center;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+  }
+  
+  
+  .input-info-aberta{
+      display: flex;
+    flex-direction: column;
+    width: 90%;
+    
+  
+  }
+  
+  .input-info-aberta input{
+    display: flex;
+    text-align: left;
+    justify-content: space-around;
+   
+    height: 100%;
+    width: 100%;
+      border: none;
+    font-size: 1.5rem;
+    padding: 2%;
+    background-color: #210b2cbe;
+    border-radius: 3px;
+    color: #fff;
+    border-bottom: solid white 1px ;
+  }
+  
+  
+  .denuncia-aberta{
+      width: 100%;
+      height: 100%;
+      padding: 3%;
+      
+  }
+  
+  
+  
+  .area-texto-aberta{
+    padding: 1%;
+      height: 100%;
+      width: 100%;
+      background-color: #210b2cbe;
+      border: solid white 1px ;
+      border-top: transparent;    
+      font-family: "Roboto", sans-serif;
+      font-size: 1.5rem;
+      outline: none;
+      border-radius: 5px;
+      resize: none;
+      color: #fff;
+  }
+  
+  #title-aberta{
+    font-size: 1.5rem;
+    padding: 2%;
+    color: white;
+  }
+  .input-info-aberta input::placeholder, .denuncia-aberta textarea::placeholder {
+    color: rgba(240, 238, 238, 0.678);
+    font-family: "Roboto", sans-serif;
+  }
+  
+  
+  .option-aberta{
+      display: flex;
+    text-decoration: none;
+    color: white;
+    font-size: x-large;
+    border-radius: 1rem;
+    border: none;
+    box-shadow: 0 8px 12px black;
+  
+  }
+  
+  .avaliar-agrupar-aberta{
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      width: 100%;
+      height: 10%;
+      background-color: transparent;
+      margin-right: 5%;
+      position: absolute;
+      bottom: 10%;
+      right:  0;
+  }
+  
+  .enviar-agrupar-aberta{
+      display: flex;
+      width: 10%;
+      height: 10%;
+      align-items: center;
+      text-align: center;
+      justify-content: center;
+     
+  
+  }
+  
+  .option-aberta{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+      font-family: 'Roboto', sans-serif;
+      font-weight: 800;
+      width: 100%;
+      height: 80%;
+      cursor: pointer;
+      background-color: #43165a;
+  
+  }
+  
+  .option-aberta:hover{
+    transform: translateY(10px);
+    transition: 300ms ease-in-out;
+    box-shadow: 0 8px 12px black;
+  }
+  
+  @media screen and (max-width : 600px) {
+    .container-filho-aberta{
+      padding-top: 5%;
+  
+    }
+    .janela-aberta {
+      width: 100%;
+    }
+    
+    #title{
+      font-size: 25px;
+      padding: 5%;
+    }
+  
+    .input-info-aberta input{
+      font-size: 20px;
+      text-align: center;
+      
+    }
+    .input-info-aberta input::placeholder, .denuncia-aberta textarea::placeholder {
+    font-size: 20px;
+    }
+      .area-texto-aberta{
+        text-align: center;
+        font-size: 18px;
+      }
+      .enviar-agrupar-aberta{
+        padding-top: 5%;
+        width: 100%;
+        height: 15%;
+      
+      }
+      .option-aberta{
+        width: 50%;
+      }
+  
+      
+      
+  }
+  

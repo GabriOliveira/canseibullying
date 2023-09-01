@@ -54,12 +54,12 @@ const Login = () => {
                       Entrar
                     </Link>
                   </figure>
-                  <figure class="circle-container-login">
+                </article >
+                <figure class="circle-container-login">
                     <Link to="/faq" class="circle-login">
                       ?
                     </Link>
                   </figure>
-                </article >
               </section>
             </form>
           </article >

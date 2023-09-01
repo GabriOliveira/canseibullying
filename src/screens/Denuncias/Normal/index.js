@@ -5,29 +5,24 @@ import "./styles-dnormal.css";
 const Normal = () => {
   return (
     < main className="container-normal">
-       <div >
-       <div className="janela">
-      <h1 id="title">Faça sua Denuncia Anonimamente</h1>
-      <div className="input-info">
-        <input type="text" placeholder="insira o apelido (opcional)"/>
-        <input type="text" placeholder="insira o titulo"/>
-        </div>
-        <div className="denuncia">
-        <textarea placeholder="insira a mensagem..." className="area-texto"></textarea>
-        </div>
-        
-      </div>
-      <div className="enviar-agrupar">
-      <button className="option">
-        <Link to="/feedback" className="no-decoration" > Enviar </Link>
-        </button>
-      </div>
-      <div  className="avaliar-agrupar">
-      <button className="option">
-        <Link to="/feedback" className="no-decoration" > ⭐ </Link>
-        </button>
-        </div>
-        </div>
+      <section className="container-filho-aberta" >
+        <article className="janela-aberta">
+          <h1 id="title-aberta">Faça sua Denuncia Anonimamente</h1>
+          <aside className="input-info-aberta">
+            <input type="text" placeholder="insira o apelido (opcional)" />
+            <input type="text" placeholder="insira o titulo" />
+          </aside>
+          <aside className="denuncia-aberta">
+            <textarea
+              placeholder="insira a mensagem..."
+              className="area-texto-aberta"
+            ></textarea>
+          </aside>
+        </article>
+        <article className="enviar-agrupar-aberta">
+          <button className="option-aberta" type="submit" onClick="/faq">Enviar</button>
+        </article>
+    </section>
     </main>
   );
 };
