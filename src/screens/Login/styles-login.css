@@ -22,6 +22,7 @@
   border-radius: 50%;
 }
 
+
 .container-login {
   height: 100%;
   width: 100%;
@@ -51,7 +52,7 @@ height: 100%;
 }
 .buttons-login {
   margin: 10px 0;
-  width: 80%;
+  width: 100%;
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -60,7 +61,7 @@ height: 100%;
 }
 .buttons-login input {
   border: none;
-  width: 70%;
+  width: 45%;
   padding: 1rem;
   font-size: 1.5rem;
   color: #ffffff;
@@ -116,8 +117,9 @@ height: 100%;
 .button-group-login {
   display: flex;
   align-items: center;
-  justify-content: center;
-  width: 90%;
+  justify-content: space-between;
+
+  width: 100%;
   height: 100%;
  
 }
@@ -136,17 +138,18 @@ height: 100%;
   font-size: larger;
   font-weight: 800;
   box-shadow: 0 12px 12px black;
-  line-height: 32px;
+ 
   text-align: center;
-  width: 30%;
+  width: 50%;
   background: #210b2c;
   color: white;
   border-radius: 50px;
   border: none;
   font-size: 1.5rem;
-  padding: 1rem;
+  padding: 2%;
   text-decoration: none;
 }
+
 .texto-abaixo{
   text-decoration: none;
   color: #0aa7e0;
@@ -228,6 +231,33 @@ input:focus {
   text-align: center;
   width: 50%;
   height: 100%;
+}
+
+
+
+.modal-body{
+  background-color: #007EAB;
+  color: black;
+  
+}
+
+.inputs-modal{
+background-color: transparent;
+}
+
+.mb-3{
+  color: gray;
+}
+
+.modal-header{
+  background-color: #210b2c;
+  border: none;
+  color: #ffffff;
+}
+.modal-footer{
+  background-color: #210b2c;
+  border: none;
+  color: #ffffff;
 }
 
 @media only screen and (max-width: 500px) {

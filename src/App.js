@@ -15,10 +15,12 @@ import Normal from "./screens/Denuncias/Normal";
 import Professor from "./screens/Denuncias/Professor";
 import EsqueciSenha from "./screens/EsqueciSenha/index.jsx";
 import Perfil from "./screens/Perfil";
-
+import 'bootstrap/dist/css/bootstrap.min.css';
 function App() {
   return (
+    
     <BrowserRouter>
+    
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
