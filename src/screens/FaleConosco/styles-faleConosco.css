@@ -171,8 +171,8 @@ textarea::placeholder {
   text-align: center;
   justify-content: center;
   align-items: center;
-  width: 10%;
-  height: 20%;
+  width: 200px;
+  height: 100px;
 }
 
 .mail-ra-spa {

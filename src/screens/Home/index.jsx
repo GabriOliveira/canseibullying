@@ -17,9 +17,9 @@ const Home = () => {
           <article className="seguradora-denuncia">
           <h1 className="title-home">Selcione O Tipo de Denuncia:</h1>
 
-                 
+                 <article className="agrupar-botoes">
                   <Link to="/anonima" class="botão-opções">
-                    <p class="text-responsive text-esquerda">
+                    <p class="text-responsive">
                       Anônima
                       <img src={patoAnonimo} alt="Pato Anônimo" class="imagem-lado" />
                     </p>
@@ -28,11 +28,11 @@ const Home = () => {
               
 
                   <Link to="/normal" class="botão-opções">
-                    <p className="text-responsive text-direita">Aberta
+                    <p className="text-responsive">Aberta
                       <img src={patoNormal} alt="Pato Anônimo" class="imagem-lado" />
                       </p>
                   </Link>
-                 
+                  </article>
           </article>
         </section>
       </main>

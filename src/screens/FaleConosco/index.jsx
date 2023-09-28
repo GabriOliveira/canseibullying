@@ -49,9 +49,8 @@ const FaleConosco = () => {
           
         </form>
         <article className="engloba-botão">
-          <button className="icon-area" type="submit">
-              <p>Enviar</p>
-            </button>
+          
+            <button type="button" class="btn btn-primary btn-lg">Enviar</button>
             </article>
       </section>
     </main>
