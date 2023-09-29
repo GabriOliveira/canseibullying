@@ -132,6 +132,14 @@ textarea::placeholder {
   justify-content: flex-end;
   align-items: flex-end;
 }
+
+.button-fc:hover {
+  box-shadow: 0 0 60px #79389a, 0 0 25px #210b2c;
+  transform: translateY(0);
+  transition: 300ms ease;
+
+}
+
 .icon-area {
   display: flex;
   cursor: pointer;

@@ -18,12 +18,11 @@ const Login = () => {
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
   return (
-    <>
 
       <main class="container-login">
 
         <section className="alinhar">
-          <figure>
+        <figure>
             <img
               src={sirene}
               class="pato"
@@ -32,6 +31,7 @@ const Login = () => {
             />
           </figure>
           <article className="container-inputs">
+            
             <form action="" method="post">
               <article class="buttons-login">
                 <label for=""></label>
@@ -40,9 +40,6 @@ const Login = () => {
                   placeholder="E-mail"
                   className="input-logar"
                 />
-                <a href="/esquecisenha" className="texto-abaixo-cad ">
-                    Esqueceu a senha?{" "}
-                  </a>
               </article >
               <article class="buttons-login">
                 <label for=""></label>
@@ -53,19 +50,35 @@ const Login = () => {
                 />
 
               </article >
+              <article class="buttons-login">
+                <label for=""></label>
+                <input
+                  type="text"
+                  placeholder="RA ou SIAPE"
+                  className="input-logar"
+                />
+                
+              </article >
               <section className="botões-de-ação">
-                <article class="buttons-login d-flex align-items-center d-grid gap-2 w-100 p-5 w-100 p-3 mx-auto p-2">
+                <article class="buttons-login d-flex align-items-center d-grid gap-2 w-100  p-5 ">
                   <figure class="button-group-login flex-column mb-3   ">
                     <Link to="/" className="botão-cadastro btn btn-primary btn-lg w-100 p-3 border border-light " style={{ backgroundColor: '#210b2c', fontSize: '1.5rem', fontWeight: 'bold' }}>
                       Entrar
                     </Link>
                     {/* <a href="/esquecisenha" className="botão-cadastro">
                       Esqueceu a senha?{" "}
-                    </a> */}
-
+                    </a> 
+                    
+                    
+                    
+                    */}
+                  <Button href="/esquecisenha" className="botão-cadastro btn btn-primary btn-lg w-100 p-3 border border-light " style={{ backgroundColor: '#210b2c', fontSize: '1.5rem', fontWeight: 'bold' }} >
+                      Esqueci a senha
+                    </Button>
                     <Button className="botão-cadastro btn btn-primary btn-lg w-100 p-3 border border-light " style={{ backgroundColor: '#210b2c', fontSize: '1.5rem', fontWeight: 'bold' }} onClick={handleShow}>
                       Cadastrar
                     </Button>
+                    
                     
                     <Modal show={show} onHide={handleClose}
                       size="lg "
@@ -84,6 +97,8 @@ const Login = () => {
                         >
                           <Form.Control type="email" placeholder="name@example.com" style={{ backgroundColor: 'transparent', color: 'white' }} />
                         </FloatingLabel>
+                        
+                        
                         <FloatingLabel controlId="floatingPassword" label="Senha" className="mb-3" style={{ backgroundColor: 'transparent', color: 'white' }}>
                           <Form.Control type="password" placeholder="Password" style={{ backgroundColor: 'transparent', color: 'white' }} />
                         </FloatingLabel>
@@ -114,7 +129,6 @@ const Login = () => {
           </article >
         </section>
       </main>
-    </>
   );
 };
 

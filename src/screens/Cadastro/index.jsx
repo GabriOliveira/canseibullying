@@ -35,11 +35,7 @@ const Cadastro = () => {
                  </article>
                  <article class="buttons-login-cad">
                 <label for=""></label>
-                <input
-                  type="number"
-                  placeholder="RA ou SIAPE"
-                  className="input-logar-cad"
-                />
+                
 
                  </article>
                 <article className="abaixo-input-cad ">

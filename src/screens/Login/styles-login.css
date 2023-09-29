@@ -26,8 +26,8 @@
 
 
 .container-login {
-  height: 100%;
-  width: 100%;
+  height: 96vh;
+  width: 100vw;
   background-image: linear-gradient(to right, #007EAB, #210b2c);
   display: flex;
   align-items: center;
@@ -45,17 +45,19 @@
   justify-content: center;
   align-items: center;
 }
-
+/* mexer aq reponsividade */
 .container-inputs {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 100%;
+  width:70%;
   height: 100%;
+  background-color: #02688dcd;
+  border-radius: 50px;
 }
 
 .buttons-login {
-  margin: 15px 0;
+  margin: 5px 0;
   width: 100%;
   height: 100%;
   display: flex;
@@ -75,8 +77,9 @@
 
 }
 
-.input-logar::placeholder {
-  color: #ffffff70;
+.input-logar {
+  width: 100%;
+  
 }
 
 .buttons-login label {
@@ -143,7 +146,6 @@
   font-family: "Roboto", sans-serif;
   font-size: larger;
   font-weight: 800;
-  box-shadow: 0 12px 12px black;
 
   text-align: center;
   width: 50%;
@@ -159,24 +161,6 @@
 .texto-abaixo {
   text-decoration: none;
   color: #0aa7e0;
-}
-
-.button-group button {
-
-
-  font-size: larger;
-  box-shadow: 0 12px 12px black;
-  line-height: 32px;
-
-  width: 15%;
-  min-width: 90px;
-  min-height: 32px;
-  background: #210b2c;
-  color: white;
-  border-radius: 50px;
-  border: none;
-  transform: translateY(0);
-
 }
 
 .abaixo-input {
@@ -196,10 +180,10 @@ input:focus {
 
 .button-group button:hover,
 .botão-cadastro:hover {
-  transform: translateY(10px);
-  transition: 300ms ease-in-out;
+  box-shadow: 0 0 60px #79389a, 0 0 25px #210b2c;
+  transform: translateY(0);
+  transition: 300ms ease;
 
-  box-shadow: 0 8px 12px black;
 }
 
 .pato {

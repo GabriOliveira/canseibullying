@@ -50,7 +50,7 @@ const FaleConosco = () => {
         </form>
         <article className="engloba-botão">
           
-            <button type="button" class="btn btn-primary btn-lg w-100 p-3 border border-light " style={{backgroundColor : '#210b2c', fontSize : '1.5rem', fontWeight : 'bold' }}>Enviar</button>
+            <button type="button" class=" button-fc btn btn-primary btn-lg w-100 p-3 border border-light " style={{backgroundColor : '#210b2c', fontSize : '1.5rem', fontWeight : 'bold' }}>Enviar</button>
             </article>
       </section>
     </main>
