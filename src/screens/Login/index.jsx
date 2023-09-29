@@ -40,6 +40,9 @@ const Login = () => {
                   placeholder="E-mail"
                   className="input-logar"
                 />
+                <a href="/esquecisenha" className="texto-abaixo-cad ">
+                    Esqueceu a senha?{" "}
+                  </a>
               </article >
               <article class="buttons-login">
                 <label for=""></label>
@@ -51,54 +54,60 @@ const Login = () => {
 
               </article >
               <section className="botões-de-ação">
-                <article class="buttons-login">
-                  <figure class="button-group-login">
-                    <Link to="/" className="botão-cadastro">
+                <article class="buttons-login d-flex align-items-center d-grid gap-2 w-100 p-5 w-100 p-3 mx-auto p-2">
+                  <figure class="button-group-login flex-column mb-3   ">
+                    <Link to="/" className="botão-cadastro btn btn-primary btn-lg w-100 p-3 border border-light " style={{ backgroundColor: '#210b2c', fontSize: '1.5rem', fontWeight: 'bold' }}>
                       Entrar
                     </Link>
-                    <a href="/esquecisenha" className="botão-cadastro">
+                    {/* <a href="/esquecisenha" className="botão-cadastro">
                       Esqueceu a senha?{" "}
-                    </a>
+                    </a> */}
 
-                    <Button className="botão-cadastro" bs-white  onClick={handleShow}>
+                    <Button className="botão-cadastro btn btn-primary btn-lg w-100 p-3 border border-light " style={{ backgroundColor: '#210b2c', fontSize: '1.5rem', fontWeight: 'bold' }} onClick={handleShow}>
                       Cadastrar
                     </Button>
-                    <Modal show={show} onHide={handleClose } 
-      size="lg"
-      aria-labelledby="contained-modal-title-vcenter"
-      centered  >
-        <Modal.Header className="modal-header" >
-          <Modal.Title>Cadastro</Modal.Title>
-        </Modal.Header>
-        <Modal.Body className="modal-body"  >
-          <FloatingLabel
-        controlId="floatingInput"
-        label="Email "
-        className="mb-3"
-      >
-        <Form.Control type="email" placeholder="name@example.com" />
-      </FloatingLabel>
-      <FloatingLabel controlId="floatingPassword" label="Senha" className="mb-3">
-        <Form.Control type="password" placeholder="Password" />
-      </FloatingLabel>
-      <FloatingLabel
-        controlId="floatingInput"
-        label="RA ou SIAPE "
-        className="mb-3"
-      >
-        <Form.Control type="email" placeholder="name@example.com" />
-      </FloatingLabel>
-      
-        </Modal.Body>
-        <button className="botão-cadastro">Finalizar</button>
-      </Modal>
+                    
+                    <Modal show={show} onHide={handleClose}
+                      size="lg "
+                      aria-labelledby="contained-modal-title-vcenter "
+                      centered
+                    >
+                      <Modal.Header className="modal-header" >
+                        <Modal.Title>Cadastro</Modal.Title>
+                      </Modal.Header>
+                      <Modal.Body className="modal-body "  >
+                        <FloatingLabel
+                          controlId="floatingInput"
+                          label="Email "
+                          className="mb-3"
+                          style={{ backgroundColor: 'transparent', color: 'white' }}
+                        >
+                          <Form.Control type="email" placeholder="name@example.com" style={{ backgroundColor: 'transparent', color: 'white' }} />
+                        </FloatingLabel>
+                        <FloatingLabel controlId="floatingPassword" label="Senha" className="mb-3" style={{ backgroundColor: 'transparent', color: 'white' }}>
+                          <Form.Control type="password" placeholder="Password" style={{ backgroundColor: 'transparent', color: 'white' }} />
+                        </FloatingLabel>
+                        <FloatingLabel
+                          controlId="floatingInput"
+                          label="RA ou SIAPE "
+                          className="mb-3"
+                          style={{ backgroundColor: 'transparent', color: 'white' }}
+                        >
+                          <Form.Control type="email" placeholder="name@example.com" style={{ backgroundColor: 'transparent', color: 'white' }} />
+                        </FloatingLabel>
+
+                      </Modal.Body>
+                      <button className="botão-cadastrobtn btn-primary btn-lg w-100 p-3 border border-light  " style={{ backgroundColor: '#210b2c', fontSize: '1.5rem', fontWeight: 'bold', color: 'white' }}>Finalizar</button>
+                    </Modal>
                   </figure>
                 </article >
-                <figure class="circle-container-login">
-                  <Link to="/faq" class="circle-login">
+                <figure class="circle-container-login ">
+                  <Link to="/faq" class="circle-login btn-lg fs-1 text-center">
                     ?
                   </Link>
+                  
                 </figure>
+                
 
               </section>
             </form>

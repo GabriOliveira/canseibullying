@@ -17,8 +17,8 @@ const Home = () => {
           <article className="seguradora-denuncia">
           <h1 className="title-home">Selcione O Tipo de Denuncia:</h1>
 
-                 <article className="agrupar-botoes">
-                  <Link to="/anonima" class="botão-opções">
+                 <article class="d-grid gap-2 w-100 p-5">
+                  <Link to="/anonima" class="botão-opções border border-light">
                     <p class="text-responsive">
                       Anônima
                       <img src={patoAnonimo} alt="Pato Anônimo" class="imagem-lado" />
@@ -27,13 +27,18 @@ const Home = () => {
                   </Link>
               
 
-                  <Link to="/normal" class="botão-opções">
+                  <Link to="/normal" class="botão-opções border border-light">
                     <p className="text-responsive">Aberta
                       <img src={patoNormal} alt="Pato Anônimo" class="imagem-lado" />
                       </p>
                   </Link>
+                  
+
                   </article>
+                  {/* style={{backgroundColor : '#210b2c'}} */}
+
           </article>
+
         </section>
       </main>
     </>

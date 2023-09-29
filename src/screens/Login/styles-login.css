@@ -6,18 +6,20 @@
 
     transform: translateY(0px);
   }
+
   50% {
 
     ransform: translateY(10px);
-    
+
   }
+
   100% {
 
     transform: translateY(0px);
   }
 }
 
-.icon-site{
+.icon-site {
   width: 130px;
   border-radius: 50%;
 }
@@ -34,6 +36,7 @@
   padding: 1%;
   flex-direction: column;
 }
+
 .container-login form {
   height: 100%;
   width: 100%;
@@ -43,15 +46,16 @@
   align-items: center;
 }
 
-.container-inputs{
+.container-inputs {
   display: flex;
-align-items: center;
-justify-content: center;
-width: 100%;
-height: 100%;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
 }
+
 .buttons-login {
-  margin: 10px 0;
+  margin: 15px 0;
   width: 100%;
   height: 100%;
   display: flex;
@@ -59,6 +63,7 @@ height: 100%;
   justify-content: center;
   align-items: center;
 }
+
 .buttons-login input {
   border: none;
   width: 45%;
@@ -66,9 +71,10 @@ height: 100%;
   font-size: 1.5rem;
   color: #ffffff;
   background-color: transparent;
-  border-bottom: solid #ffffff ;
- 
+  border-bottom: solid #ffffff;
+
 }
+
 .input-logar::placeholder {
   color: #ffffff70;
 }
@@ -92,7 +98,7 @@ height: 100%;
 }
 
 
-.buttons-login p > a {
+.buttons-login p>a {
   text-align: left;
   color: var(--color-link);
   width: 68%;
@@ -102,7 +108,7 @@ height: 100%;
   font-size: 1.5rem;
 }
 
-.alinhar{
+.alinhar {
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -110,7 +116,7 @@ height: 100%;
   flex-direction: column;
 }
 
-.buttons-login input{
+.buttons-login input {
   font-size: 1.5rem;
 }
 
@@ -121,24 +127,24 @@ height: 100%;
 
   width: 100%;
   height: 100%;
- 
+
 }
 
-.button-group-login button{
+.button-group-login button {
   padding: 1%;
- 
+
 }
 
 
 
 
 .botão-cadastro {
-  
+
   font-family: "Roboto", sans-serif;
   font-size: larger;
   font-weight: 800;
   box-shadow: 0 12px 12px black;
- 
+
   text-align: center;
   width: 50%;
   background: #210b2c;
@@ -150,18 +156,18 @@ height: 100%;
   text-decoration: none;
 }
 
-.texto-abaixo{
+.texto-abaixo {
   text-decoration: none;
   color: #0aa7e0;
 }
 
 .button-group button {
-  
-  
+
+
   font-size: larger;
   box-shadow: 0 12px 12px black;
   line-height: 32px;
-  
+
   width: 15%;
   min-width: 90px;
   min-height: 32px;
@@ -173,14 +179,14 @@ height: 100%;
 
 }
 
-.abaixo-input{
+.abaixo-input {
   display: flex;
   flex-direction: row;
   width: 70%;
   justify-content: space-between;
   text-align: center;
   font: 800;
-  
+
   font-size: 1.5rem;
 }
 
@@ -189,11 +195,12 @@ input:focus {
 }
 
 .button-group button:hover,
-.botão-cadastro:hover{
+.botão-cadastro:hover {
   transform: translateY(10px);
   transition: 300ms ease-in-out;
 
-  box-shadow: 0 8px 12px black;}
+  box-shadow: 0 8px 12px black;
+}
 
 .pato {
   width: 130px;
@@ -204,57 +211,61 @@ input:focus {
   display: flex;
   justify-content: flex-end;
   text-align: center;
+  position: absolute;
+  bottom: 10px;
+  right: 50px;
+  width: 20%;
+  height: 15%;
+  justify-content: space-evenly;
 }
+
 .circle-login {
   display: flex;
   text-decoration: none;
   color: white;
   font-size: 1.5rem;
-  width: 5%;
-  height: 10%;
-  position: absolute;
+  width: 25%;
+  height: 65%;
+
   font-size: xxx-large;
-  bottom: 50px;
-  right: 50px;
   align-items: center;
   justify-content: center;
   border-radius: 50px;
-  
-  background-color: #dd0000;
+  background-color: #c80d0d;
   animation: pula 2s ease infinite;
 }
 
-.botões-de-ação{
+.botões-de-ação {
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
   width: 50%;
-  height: 100%;
 }
 
 
 
-.modal-body{
+.modal-body {
   background-color: #007EAB;
   color: black;
-  
+
 }
 
-.inputs-modal{
-background-color: transparent;
+.inputs-modal {
+  background-color: transparent;
 }
 
-.mb-3{
+.mb-3 {
   color: gray;
 }
 
-.modal-header{
+.modal-header {
   background-color: #210b2c;
   border: none;
   color: #ffffff;
 }
-.modal-footer{
+
+.modal-footer {
   background-color: #210b2c;
   border: none;
   color: #ffffff;

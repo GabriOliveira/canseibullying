@@ -15,9 +15,7 @@ const EsqueciSenha = () => {
       
         <aside className="campos">
           <input type="email" alt="email" placeholder="Email" />
-          <input type="password" alt="senha" placeholder="Nova Senha" />
-          <input type="password" alt="c-senha" placeholder="Confirmar Nova Senha" />
-          <button type="submit">Confirmar</button>
+          <button type="submit" className="btn btn-primary btn-lg border border-light">Confirmar</button>
         </aside>
       </article>
     </main>

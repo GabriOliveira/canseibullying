@@ -42,17 +42,15 @@ const Cadastro = () => {
                 />
 
                  </article>
-                <article className="abaixo-input-cad">
-                  <a href="/esquecisenha" className="texto-abaixo-cad">
-                    Esqueceu a senha?{" "}
-                  </a>
+                <article className="abaixo-input-cad ">
+                  
 
                
               </article>
               <section className="botões-de-ação-cad">
                 <article class="buttons-login-cad">
-                  <figure class="button-group-login-cad">
-                    <Link to="/entrar" className="botão-cadastro-cad">
+                  <figure class="button-group-login-cad d-grid gap-2 w-100 p-5">
+                    <Link to="/entrar" className="botão-cadastro-cadbotão-cadastro btn btn-primary btn-lg w-100 p-3 border border-light " style={{ backgroundColor: '#210b2c', fontSize: '1.5rem', fontWeight: 'bold' }}>
                       Finalizar
                     </Link>
                   </figure>
