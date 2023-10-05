@@ -6,11 +6,11 @@ import patoNormal from "../../assets/images/pato-normal.svg";
 import sirene from "../../assets/images/sirene.jpg";
 import "./styles-login.css";
 import { Link } from "react-router-dom";
-import { useState } from 'react';
-import Button from 'react-bootstrap/Button';
-import Form from 'react-bootstrap/Form';
-import Modal from 'react-bootstrap/Modal';
-import FloatingLabel from 'react-bootstrap/FloatingLabel';
+import { useState } from "react";
+import Button from "react-bootstrap/Button";
+import Form from "react-bootstrap/Form";
+import Modal from "react-bootstrap/Modal";
+import FloatingLabel from "react-bootstrap/FloatingLabel";
 
 const Login = () => {
   const [show, setShow] = useState(false);
@@ -18,11 +18,10 @@ const Login = () => {
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
   return (
-
-      <main class="container-login">
-
-        <section className="alinhar">
-        <figure>
+    <main class="container-login">
+      <section className="alinhar">
+        <article className="container-inputs">
+          <figure>
             <img
               src={sirene}
               class="pato"
@@ -30,105 +29,158 @@ const Login = () => {
               className="icon-site"
             />
           </figure>
-          <article className="container-inputs">
-            
-            <form action="" method="post">
-              <article class="buttons-login">
-                <label for=""></label>
+          <form action="" method="post">
+            <aside className="input-logar">
+              {" "}
+              <div class="buttons-login form-floating mb-3">
                 <input
                   type="email"
-                  placeholder="E-mail"
-                  className="input-logar"
+                  class="form-control"
+                  id="floatingInput"
+                  placeholder="name@example.com"
                 />
-              </article >
-              <article class="buttons-login">
-                <label for=""></label>
+                <label for="floatingInput">Email</label>
+              </div>
+              <div class="buttons-login form-floating">
                 <input
                   type="password"
-                  placeholder="Senha"
-                  className="input-logar"
+                  class="form-control"
+                  id="floatingPassword"
+                  placeholder="Password"
                 />
+                <label for="floatingPassword">Senha</label>
+              </div>
+              
+              <a href="/esquecisenha" className="link-color">
+                Esqueceu a senha?
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-lock-fill"
+                  viewBox="0 0 16 16"
+                >
+                  <path d="M8 1a2 2 0 0 1 2 2v4H6V3a2 2 0 0 1 2-2zm3 6V3a3 3 0 0 0-6 0v4a2 2 0 0 0-2 2v5a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2z" />
+                </svg>
+              </a>
+            </aside>
 
-              </article >
-              <article class="buttons-login">
-                <label for=""></label>
-                <input
-                  type="text"
-                  placeholder="RA ou SIAPE"
-                  className="input-logar"
-                />
-                
-              </article >
-              <section className="botões-de-ação">
-                <article class="buttons-login d-flex align-items-center d-grid gap-2 w-100  p-5 ">
-                  <figure class="button-group-login flex-column mb-3   ">
-                    <Link to="/" className="botão-cadastro btn btn-primary btn-lg w-100 p-3 border border-light " style={{ backgroundColor: '#210b2c', fontSize: '1.5rem', fontWeight: 'bold' }}>
-                      Entrar
-                    </Link>
-                    {/* <a href="/esquecisenha" className="botão-cadastro">
+            <section className="botões-de-ação">
+              <figure class="button-group-login ">
+                <Link
+                  to="/"
+                  className="botão-cadastro btn btn-primary btn-lg w-100 p-3  "
+                  style={{
+                    backgroundColor: "#210b2c",
+                    fontSize: "1.5rem",
+                    fontWeight: "bold",
+                  }}
+                >
+                  Entrar
+                </Link>
+                {/* <a href="/esquecisenha" className="botão-cadastro">
                       Esqueceu a senha?{" "}
                     </a> 
                     
                     
                     
                     */}
-                  <Button href="/esquecisenha" className="botão-cadastro btn btn-primary btn-lg w-100 p-3 border border-light " style={{ backgroundColor: '#210b2c', fontSize: '1.5rem', fontWeight: 'bold' }} >
-                      Esqueci a senha
-                    </Button>
-                    <Button className="botão-cadastro btn btn-primary btn-lg w-100 p-3 border border-light " style={{ backgroundColor: '#210b2c', fontSize: '1.5rem', fontWeight: 'bold' }} onClick={handleShow}>
-                      Cadastrar
-                    </Button>
-                    
-                    
-                    <Modal show={show} onHide={handleClose}
-                      size="lg "
-                      aria-labelledby="contained-modal-title-vcenter "
-                      centered
-                    >
-                      <Modal.Header className="modal-header" >
-                        <Modal.Title>Cadastro</Modal.Title>
-                      </Modal.Header>
-                      <Modal.Body className="modal-body "  >
-                        <FloatingLabel
-                          controlId="floatingInput"
-                          label="Email "
-                          className="mb-3"
-                          style={{ backgroundColor: 'transparent', color: 'white' }}
-                        >
-                          <Form.Control type="email" placeholder="name@example.com" style={{ backgroundColor: 'transparent', color: 'white' }} />
-                        </FloatingLabel>
-                        
-                        
-                        <FloatingLabel controlId="floatingPassword" label="Senha" className="mb-3" style={{ backgroundColor: 'transparent', color: 'white' }}>
-                          <Form.Control type="password" placeholder="Password" style={{ backgroundColor: 'transparent', color: 'white' }} />
-                        </FloatingLabel>
-                        <FloatingLabel
-                          controlId="floatingInput"
-                          label="RA ou SIAPE "
-                          className="mb-3"
-                          style={{ backgroundColor: 'transparent', color: 'white' }}
-                        >
-                          <Form.Control type="email" placeholder="name@example.com" style={{ backgroundColor: 'transparent', color: 'white' }} />
-                        </FloatingLabel>
+                {/* <Button
+                  href="/esquecisenha"
+                  className="botão-cadastro btn btn-primary btn-lg w-100 p-3  "
+                  style={{
+                    backgroundColor: "#210b2c",
+                    fontSize: "1.5rem",
+                    fontWeight: "bold",
+                  }}
+                >
+                  Esqueci a senha
+                </Button> */}
+                <Button
+                  className="botão-cadastro btn btn-primary btn-lg w-100 p-3"
+                  style={{
+                    backgroundColor: "#210b2c",
+                    fontSize: "1.5rem",
+                    fontWeight: "bold",
+                  }}
+                  onClick={handleShow}
+                >
+                  Cadastrar
+                </Button>
 
-                      </Modal.Body>
-                      <button className="botão-cadastrobtn btn-primary btn-lg w-100 p-3 border border-light  " style={{ backgroundColor: '#210b2c', fontSize: '1.5rem', fontWeight: 'bold', color: 'white' }}>Finalizar</button>
-                    </Modal>
-                  </figure>
-                </article >
-                <figure class="circle-container-login ">
-                  <Link to="/faq" class="circle-login btn-lg fs-1 text-center">
-                    ?
-                  </Link>
-                  
-                </figure>
-                
-
-              </section>
-            </form>
-          </article >
-        </section>
-      </main>
+                <Modal
+                  show={show}
+                  onHide={handleClose}
+                  size="lg "
+                  aria-labelledby="contained-modal-title-vcenter "
+                  centered
+                >
+                  <Modal.Header className="modal-header">
+                    <Modal.Title >
+                      <figure style={{display : 'flex',alignItems : 'center', textAlign : 'center', justifyContent : 'center'}}>
+                        <img
+                          src={sirene}
+                          class="pato"
+                          alt="logo site"
+                          className="icon-site"
+                          style={{width : '100px', height : '110px'}}
+                        />
+                      </figure>
+                    </Modal.Title>
+                  </Modal.Header>
+                  <Modal.Body className="modal-body ">
+                    <div class="buttons-login form-floating mb-3">
+                      <input
+                        type="email"
+                        class="form-control"
+                        id="floatingInput"
+                        placeholder="name@example.com"
+                      />
+                      <label for="floatingInput">Email</label>
+                    </div>
+                    <div class="buttons-login form-floating">
+                      <input
+                        type="password"
+                        class="form-control"
+                        id="floatingPassword"
+                        placeholder="Password"
+                      />
+                      <label for="floatingPassword">Senha</label>
+                    </div>
+                    <div class="buttons-login form-floating">
+                      <input
+                        type="password"
+                        class="form-control"
+                        id="floatingPassword"
+                        placeholder="Password"
+                      />
+                      <label for="floatingPassword">RA ou SIAPE</label>
+                    </div>
+                    <Button variant="primary" size="lg" style={{
+                    backgroundColor: "#210b2c",
+                    fontSize: "20px",
+                    fontWeight: "bold",
+                  }}>
+          Finalizar
+        </Button>           </Modal.Body>
+        {/* style={{
+                    backgroundColor: "#210b2c",
+                    fontSize: "1.5rem",
+                    fontWeight: "bold",
+                  }} */}
+                </Modal>
+              </figure>
+              <figure class="circle-container-login ">
+                <Link to="/faq" class="circle-login btn-lg fs-1 text-center">
+                  ?
+                </Link>
+              </figure>
+            </section>
+          </form>
+        </article>
+      </section>
+    </main>
   );
 };
 

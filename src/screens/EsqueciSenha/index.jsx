@@ -5,17 +5,21 @@ import iconePessoaSorrindo from "../../assets/images/icone-pessoa-sorrindo-naveg
 import iconeCartaNavegacao from "../../assets/images/icone-carta-navegacao.svg";
 import Faq from "../Faq";
 import { Link } from "react-router-dom";
-
+import iconmail from "../../assets/images/mail-icon.png";
 const EsqueciSenha = () => {
   return (
     <main className="container-esqueci-senha">
-     
-      <h1>Preencha os campos abaixo:</h1>
+      <h1>Preencha o campo</h1>
       <article className="filho-es">
-      
+        <img src={iconmail} style={{ width: "150px", height: "135px" }} />
         <aside className="campos">
           <input type="email" alt="email" placeholder="Email" />
-          <button type="submit" className="btn btn-primary btn-lg border border-light">Confirmar</button>
+          <button
+            type="submit"
+            className="btn btn-primary btn-lg border border-light"
+          >
+            Confirmar
+          </button>
         </aside>
       </article>
     </main>
