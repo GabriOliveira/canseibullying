@@ -15,25 +15,33 @@ const FaleConosco = () => {
           <h1>Como Podemos Te Ajudar ?</h1>
         </article>
         <form action="" method="post">
-          <article class="name-fc">
-            <label for="">Nome</label>
-            <input type="text" name="nome" placeholder="Nome" />
-          </article>
+          
+
+          <div class="name-fc form-floating mb-3">
+                <input
+                  type="email"
+                  class="form-control"
+                  id="floatingInput"
+                  placeholder="name@example.com"
+                />
+                <label for="floatingInput">Email</label>
+              </div>
+
           <section class="mail-ra-spa">
-            <label for="">E-Mail</label>
-            <input
-              type="email"
-              class="input-double-fc"
-              name="email"
-              placeholder="E-Mail"
-            />
-            <label for="">RA </label>
-            <input
-              type="text"
-              class="input-double-fc"
-              name="ra"
-              placeholder="RA"
-            />
+          <input
+                  type="email"
+                  class="form-control"
+                  id="floatingInput"
+                  placeholder="name@example.com"
+                />
+                <label for="floatingInput">Email</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="floatingInput"
+                  placeholder="name@example.com"
+                />
+                <label for="floatingInput">Email</label>
           </section>
           
           <section class="area-msg">

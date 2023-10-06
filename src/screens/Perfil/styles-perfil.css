@@ -54,16 +54,21 @@
   height: 25px;
   background-color: #CCC;
   position: relative;
+  
+ border-radius: 50px;
 }
 .container-emotion .conteudo-emotion{
  position: absolute;
  height: 100%;
  background-color: #0fd439;
+ 
+ border-radius: 50px;
  animation: progress-animation 5s forwards;
 }
 @keyframes progress-animation{
-  0% { width: 0%;
+  0% { width: 10%;
   background-color: red;
+  
   } 
   100% { width: 100%;
   }

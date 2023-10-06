@@ -50,7 +50,6 @@ const Login = () => {
                 />
                 <label for="floatingPassword">Senha</label>
               </div>
-              
               <a href="/esquecisenha" className="link-color">
                 Esqueceu a senha?
                 <svg
@@ -117,14 +116,21 @@ const Login = () => {
                   centered
                 >
                   <Modal.Header className="modal-header">
-                    <Modal.Title >
-                      <figure style={{display : 'flex',alignItems : 'center', textAlign : 'center', justifyContent : 'center'}}>
+                    <Modal.Title>
+                      <figure
+                        style={{
+                          display: "flex",
+                          alignItems: "center",
+                          textAlign: "center",
+                          justifyContent: "center",
+                        }}
+                      >
                         <img
                           src={sirene}
                           class="pato"
                           alt="logo site"
                           className="icon-site"
-                          style={{width : '100px', height : '110px'}}
+                          style={{ width: "100px", height: "110px" }}
                         />
                       </figure>
                     </Modal.Title>
@@ -157,25 +163,37 @@ const Login = () => {
                       />
                       <label for="floatingPassword">RA ou SIAPE</label>
                     </div>
-                    <Button variant="primary" size="lg" style={{
-                    backgroundColor: "#210b2c",
-                    fontSize: "20px",
-                    fontWeight: "bold",
-                  }}>
-          Finalizar
-        </Button>           </Modal.Body>
-        {/* style={{
+                    <Button
+                      variant="primary"
+                      size="lg"
+                      style={{
+                        backgroundColor: "#210b2c",
+                        fontSize: "20px",
+                        fontWeight: "bold",
+                      }}
+                    >
+                      Finalizar
+                    </Button>{" "}
+                  </Modal.Body>
+                  {/* style={{
                     backgroundColor: "#210b2c",
                     fontSize: "1.5rem",
                     fontWeight: "bold",
                   }} */}
                 </Modal>
               </figure>
-              <figure class="circle-container-login ">
-                <Link to="/faq" class="circle-login btn-lg fs-1 text-center">
-                  ?
-                </Link>
-              </figure>
+              {/* {/* <figure class="circle-container-login ">
+                
+
+                  <figure class="circle-container">
+                    
+
+                    <Link to="/faq" class="circle-login ">
+                      FAQ
+                    </Link>
+                    
+                  </figure> 
+              </figure>*/}
             </section>
           </form>
         </article>

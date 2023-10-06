@@ -1,6 +1,5 @@
 import "./App.css";
 import Home from "./screens/Home/index";
-import Cadastro from "./screens/Cadastro/index";
 import Login from "./screens/Login/index";
 import FaleConosco from "./screens/FaleConosco/index";
 import Faq from "./screens/Faq/index";
@@ -25,7 +24,6 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/fale-conosco" element={<FaleConosco />} />
-        <Route path="/cadastrar" element={<Cadastro />} />
         <Route path="/entrar" element={<Login />} />
         <Route path="/faq" element={<Faq />} />
         <Route path="/painel" element={<Painel />} />

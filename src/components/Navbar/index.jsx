@@ -18,10 +18,7 @@ const Navbar = () => {
       route: "/entrar",
       title: "Entrar",
     },
-    {
-      route: "/cadastrar",
-      title: "Cadastrar",
-    },
+    
     
     {
       route: "/painel",
