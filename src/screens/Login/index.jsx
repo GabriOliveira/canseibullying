@@ -50,6 +50,8 @@ const Login = () => {
                 />
                 <label for="floatingPassword">Senha</label>
               </div>
+              
+              
               <a href="/esquecisenha" className="link-color">
                 Esqueceu a senha?
                 <svg
@@ -115,15 +117,15 @@ const Login = () => {
                   aria-labelledby="contained-modal-title-vcenter "
                   centered
                 >
-                  <Modal.Header className="modal-header">
-                    <Modal.Title>
-                      <figure
-                        style={{
+                  <Modal.Header className="modal-header" style={{
                           display: "flex",
                           alignItems: "center",
                           textAlign: "center",
                           justifyContent: "center",
-                        }}
+                        }}>
+                    <Modal.Title >
+                      <figure
+                       
                       >
                         <img
                           src={sirene}
@@ -135,7 +137,13 @@ const Login = () => {
                       </figure>
                     </Modal.Title>
                   </Modal.Header>
-                  <Modal.Body className="modal-body ">
+                  <Modal.Body className="modal-body " style={{
+                          display: "flex",
+                          alignItems: "center",
+                          textAlign: "center",
+                          justifyContent: "center",
+                          flexDirection : 'column'
+                        }}>
                     <div class="buttons-login form-floating mb-3">
                       <input
                         type="email"
@@ -165,11 +173,13 @@ const Login = () => {
                     </div>
                     <Button
                       variant="primary"
-                      size="lg"
+                      size="lg "
                       style={{
                         backgroundColor: "#210b2c",
                         fontSize: "20px",
                         fontWeight: "bold",
+                        width : '100%',
+                        height : '50%'
                       }}
                     >
                       Finalizar

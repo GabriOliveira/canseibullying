@@ -61,9 +61,9 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  
+  width: 100%;
   text-align: center;
-  padding: 7%;
+  padding: 5%;
   border-radius: 5px;
   border: none;
   text-decoration: none;
@@ -79,6 +79,17 @@ body {
   height: 45%;
   width: 75%;
   justify-content: space-around;
+}
+
+.agrupar-botoes-home{
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: space-around;
+  flex-direction: column;
+  width: 60%;
+  height: 50%;
+
 }
 
 

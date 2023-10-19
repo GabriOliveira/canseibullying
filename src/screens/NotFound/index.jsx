@@ -1,7 +1,7 @@
 const NotFound = () => {
   return (
-    <main>
-      <h1>Pagina não encontrada</h1>
+    <main className="notfound-c">
+      <h1 style={{color : 'black'}}>Pagina não encontrada</h1>
     </main>
   );
 };

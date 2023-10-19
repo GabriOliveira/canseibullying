@@ -5,11 +5,23 @@ import iconePessoaSorrindo from "../../assets/images/icone-pessoa-sorrindo-naveg
 import iconeCartaNavegacao from "../../assets/images/icone-carta-navegacao.svg";
 import Faq from "../Faq";
 import { Link } from "react-router-dom";
+import sirene from "../../assets/images/sirene.jpg";
 
 const FaleConosco = () => {
   return (
     <main class="container-fale-conosco">
       <section className="container-filho-fc">
+      <figure
+                       
+                       >
+                         <img
+                           src={sirene}
+                           class="pato"
+                           alt="logo site"
+                           className="icon-site"
+                           style={{ width: "100px", height: "110px" }}
+                         />
+                       </figure>
         <article class="title-fale-conosco">
           
           <h1>Como Podemos Te Ajudar ?</h1>
@@ -17,34 +29,28 @@ const FaleConosco = () => {
         <form action="" method="post">
           
 
-          <div class="name-fc form-floating mb-3">
+          <div class="name-fc mb-3">
                 <input
                   type="email"
                   class="form-control"
                   id="floatingInput"
-                  placeholder="name@example.com"
+                  placeholder="Email"
                 />
                 <label for="floatingInput">Email</label>
               </div>
-
-          <section class="mail-ra-spa">
-          <input
-                  type="email"
-                  class="form-control"
-                  id="floatingInput"
-                  placeholder="name@example.com"
-                />
-                <label for="floatingInput">Email</label>
+              <div class="name-fc mb-3">
                 <input
                   type="email"
                   class="form-control"
                   id="floatingInput"
-                  placeholder="name@example.com"
+                  placeholder="RA ou SIAPE"
                 />
-                <label for="floatingInput">Email</label>
-          </section>
+                <label for="floatingInput">RA ou SIAPE</label>
+              </div>
+
           
-          <section class="area-msg">
+          
+          <section class="msg">
             <textarea
               name="mensagem"
               cols="20"
